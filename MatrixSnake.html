@@ -41,8 +41,7 @@
 								<li><a href="Square.html">Calc Square</a></li>
 								<li><a href="Series.html">Sum series</a></li>
 								<li><a href="MatrixSolve.html">Matrix Sort</a></li>
-								<li><a href="MatrixSnake.html">Matrix Snake filling</a></li>	
-
+								<li><a href="MatrixSnake.html">Matrix Snake filling</a></li>
 								<!-- <li><a href="figures.html">Draw SVG</a></li> -->
 							</ul>
 						</li>
@@ -57,31 +56,12 @@
 			<img src="imgs/img1.jpg" width="100%" height="100%">
 		</div>
 		<div class="center-column">
-			<div class="SquareCalc">
-				<p class="_Title">Параллелограм</p>
-				<form id="form">
-					<p class="FigureSides">
-						Длина основания:
-					</p>
-					<input type="number" name="ParWidth"><br>
-					<p class="FigureSides">
-						Длина высоты к основанию:
-					</p>
-					<input type="number" name="ParHeight"><br>
-					<p class="FigureSides">
-						Площадь:
-					</p>
-					<input type="number" name="Result" disabled><br>
-					<input type="button" name="calc" value="Посчитать" onclick="CalculateSquare()">
-				</form>
-			</div>
-			<br>
-			<br>
-			<hr>
-			<div class="DescriptionFigure">
-				<p> Параллелогра́мм (др.-греч. παραλληλόγραμμον от παράλληλος — параллельный и γραμμή — линия) — это четырёхугольник, у которого противоположные стороны попарно параллельны, то есть лежат на параллельных прямых. Частными случаями параллелограмма являются
-					прямоугольник, квадрат и ромб.</p>
-				<img src="imgs/Parallelogram.png" width="100%" height="100%">
+			<div class="FillSnakeDiv">
+				<p>Заполнение Змейкой</p>
+				<input type="number" id="MinNum" placeholder="Введите минимальное число">
+				<input type="number" id="MaxNum" placeholder="Введите максимальное число">
+				<input type="number" id="Size" placeholder="Введите размерность">
+				<input type="button" id="Enter2" onclick="FillSnake()" name="Fill" value="Заполнить">
 			</div>
 		</div>
 		<div class="right-column">
